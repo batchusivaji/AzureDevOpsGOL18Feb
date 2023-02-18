@@ -10,6 +10,7 @@ resources:
   repositories:
     - repository: 'azuredevopstemplates'
       name: 'AzureDevOpsReusableTemplates'
+      endpoint: 'github.com_shaikkhajaibrahim'
       type: 'github'
       ref: 'refs/heads/main'
 
