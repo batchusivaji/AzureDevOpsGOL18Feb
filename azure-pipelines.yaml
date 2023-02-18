@@ -6,9 +6,5 @@ pool:
 trigger:
   - master
 
-extends:
-  template: ./templates/maven-build.yaml
-  parameters:
-    branch: 'master'
-    agentvmImage: 'ubuntu-18.04'
-    jdkVersion: '1.8'
+steps:
+  - template: ./templates/maven-build-reusable.yaml
