@@ -19,4 +19,6 @@ steps:
     parameters:
       jdkVersion: '1.8'
       pathToPublish: 'gameoflife-web/target/gameoflife.war'
+      authenticateMavenFeed: true
+      goal: 'deploy'
   
