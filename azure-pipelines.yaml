@@ -6,7 +6,14 @@ pool:
 trigger:
   - master
 
+resources:
+  repositories:
+    - repository: 'azuredevopstemplates'
+      name: 'AzureDevOpsReusableTemplates'
+      type: 'github'
+      ref: 'refs/heads/main'
+
 steps:
-  - template: ./templates/maven-build-reusable.yaml
+  - template: java/maven-build-simple.yaml@azuredevopstemplates
     parameters:
       jdkVersion: '1.8'
