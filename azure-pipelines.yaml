@@ -18,4 +18,5 @@ steps:
   - template: java/maven-build-simple.yaml@azuredevopstemplates
     parameters:
       jdkVersion: '1.8'
-  - script: "echo $(Build.ArtifactStagingDirectory)"
+      pathToPublish: 'gameoflife-web/target/gameoflife.war'
+  
